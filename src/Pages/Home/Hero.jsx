@@ -8,7 +8,7 @@ import { FaGooglePlay } from "react-icons/fa6";
 const Hero = () => {
   return (
     <>
-         <main className="w-full lg:py-52 pt-52 pb-24 flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:h-[90vh] h-fit text-black lg:px-[100px] md:px-[50px] px-[20px]">
+         <main className="w-full lg:py-52 md:pt-52 pt-36 pb-24 flex lg:flex-row flex-col lg:justify-between justify-center items-center lg:h-[90vh] h-fit text-black lg:px-[100px] md:px-[50px] px-[20px]">
 
            <div className='flex flex-col gap-5 w-full lg:items-start items-center lg:w-auto'>
 
