@@ -4,7 +4,7 @@ const Join = () => {
   return (
     <>
          <main className='w-full py-20 text-black flex flex-col items-center'>
-              <p className='font-semibold text-5xl'>Join the Foodie Family <span className='inline-block' style={{ transform: 'rotate(-15deg)' }}> 🍔</span></p>
+              <p className='font-semibold md:text-5xl text-[1.8rem] text-center'>Join the Foodie Family <span className='inline-block' style={{ transform: 'rotate(-15deg)' }}> 🍔</span></p>
 
               {/* <div className='w-fit mt-24 flex overflow-x-scroll gap-5 carousel'>
 

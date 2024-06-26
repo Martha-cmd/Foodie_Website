@@ -7,7 +7,7 @@ import Card from './Widgets/Card'
 const Categories = () => {
   return (
     <>
-         <main className='w-full text-black pb-20 flex justify-between gap-4 px-[100px]'>
+         <main className='w-full text-black pb-20 flex lg:flex-row flex-col justify-between gap-4 lg:px-[100px] md:px-[50px] px-[20px] items-center'>
 
             <Card 
                 title="Order Food" 

@@ -5,7 +5,7 @@ import { FaGooglePlay } from "react-icons/fa6";
 const Ads = () => {
   return (
     <>
-          <main className='w-full py-20 text-black flex flex-col items-center px-[100px] mt-28'>
+          <main className='w-full py-20 text-black flex flex-col items-center lg:px-[100px] md:px-[50px] px-[0] mt-28'>
 
           {/* <div class="custom-shape-divider w-full h-[300px]">
            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
@@ -34,11 +34,12 @@ const Ads = () => {
            </svg>
           </div> */}
 
-                 <div className="flex justify-between items-center w-full h-[400px] rounded-[30px] border-[5px] border-[#034956] pt-5 px-16" style={{
+                 <div className="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center w-full lg:h-[400px] h-fit lg:gap-0 gap-20 rounded-[30px] border-[5px] border-[#034956] lg:pt-5 pt-10 lg:px-16 px-5 bg-red-500" style={{
                         background: `linear-gradient(to bottom, #F15025 0%, rgba(247, 53, 30, 93.23) 100%, rgba(255, 21, 21, 0.85) 100%)`,
                     }}>
+                      
 
-                        <div className='w-[348px] clip-bottom'>
+                        <div className='w-[348px] clip-bottom '>
                                 <div className="mockup-phone ">
                                                     <div className="camera"></div> 
                                                     <div className="display">
@@ -47,13 +48,18 @@ const Ads = () => {
 
                                 </div>
                         </div>
+                        {/* lg:visible hidden */}
                         
-                       <div className='flex flex-col gap-2'>
+                       <div className='flex flex-col lg:gap-2 gap-6 items-center lg:w-auto w-full'>
                             <p className='text-[#034956] text-lg font-semibold'>Download the app</p>
                                 
-                                <div className='text-white text-[40px] font-semibold w-[440px]'>Enjoy your food <p className='break-words'>without leaving the</p><p>house.</p></div>
+                                {/* <div className='text-white text-[40px] font-semibold w-[440px] md:visible bg-blue-500'>Enjoy your food <p className='break-words'>without leaving the</p><p>house.</p></div> */}
+
+                                <div className="text-white md:text-[40px] text-2xl font-semibold lg:w-[440px] w-full text-center leading-[3rem]">
+                                    Enjoy your food without leaving the house
+                                </div>
                             
-                                <div className="mt-4 flex gap-4">
+                                <div className="mt-4 flex md:flex-row flex-col md:gap-4 gap-6">
 
                                     <button className='py-1.5 px-4 bg-white flex justify-center text-black rounded-full items-center gap-2 '>
                                     <p className='text-lg text-[16px]'>Apple Store</p>
