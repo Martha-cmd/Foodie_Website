@@ -7,7 +7,9 @@ import Package from '../assets/icons/social-paper-bag.png'
 import Food from '../assets/icons/food.png'
 import Rider from '../assets/icons/rider.png'
 import { MdOutlineMenu, MdClose, MdOutlineArrowDropDown } from "react-icons/md";
-
+import { Link } from 'react-router-dom'
+import { Link as ScrollLink } from 'react-scroll';
+import { HashLink } from 'react-router-hash-link';
 
 const Nav = () => {
   const [ isScrolled, setisScrolled ] = useState(false);
@@ -34,12 +36,17 @@ const Nav = () => {
     <>
         <main className={`w-full h-20 flex justify-between items-center cursor-pointer fixed text-black lg:px-[100px] md:px-[50px] px-[20px] z-40 transition-colors duration-300 ${isScrolled ? 'bg-[#fba68fd3]' : 'bg-transparent'}`}>
 
-                   <img src={ Logo } alt="" className='w-24 h-10'/>
+                   <Link to="/"><img src={ Logo } alt="" className='md:w-24 w- w-16 md:h-10 h-7'/></Link>
                    
                    <ul className='w-96 lg:flex gap-10 items-center hidden'>
-                      <li className='hover:underline decoration-[#034956] decoration-2  underline-offset-4 duration-500 flex gap-5 items-center'>Company</li>
-                      <li className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>FAQs</li>
-                      <li className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>Contact</li>
+
+                      <Link to="/about" className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>Company</Link>
+
+                      {/* <Link to="/about" className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>FAQs</Link> */}
+
+                      <HashLink smooth to="/about#faq" className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>FAQs</HashLink>
+
+                      <ScrollLink to='footer' smooth={true} duration={500} className='hover:underline underline-offset-4 decoration-[#034956] decoration-2 duration-500'>Contact</ScrollLink>
                    
                       {/* <button className='py-1.5 px-4 bg-black text-white rounded-full'>Sign up</button> */}
                       <div className="dropdown dropdown-bottom dropdown-end">
@@ -62,18 +69,20 @@ const Nav = () => {
 
               <ul className='text-white flex flex-col gap-10 md:text-xl text-[14px]'>
 
-                <li className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
+                <Link to='/about' className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
                   <img src={ Company } alt="company" className='md:w-8 w-6'/>
                   Company
-                </li>
-                <li className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
+                </Link>
+                
+                <Link to='/about' className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
                 <img src={ Question } alt="company" className='md:w-8 w-6'/>
                   FAQs
-                </li>
-                <li className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
+                </Link>
+
+                <Link to='/' className='hover:bg-[#F15025] md:px-8 px-5 py-5 duration-500 flex gap-2 items-center' onClick={() => setshowMenu(false)}>
                   <img src={ Contact } alt="company" className='md:w-8 w-6'/>
                   Contact
-                </li>
+                </Link>
                 <li className='hover:bg-[#F15025] md:px-10 px-6 py-5 duration-500 flex gap-3 items-center' onClick={() => setshowMenu(false)}>
                 <img src={ Package } alt="company" className='md:w-5 w-4'/>
                   Customer App
