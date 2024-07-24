@@ -4,6 +4,8 @@ import Home from './Home/Home'
 import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
 import About from './About/About'
+import Privacy from './Legal/Privacy'
+import Terms from './Legal/Terms'
 
 const Index = () => {
   return (
@@ -13,6 +15,8 @@ const Index = () => {
                 <Routes>
                      <Route path='/' element={<Home />}/>
                      <Route path='about' element={<About />}/>
+                     <Route path='/userprivacy' element={<Privacy />}/>
+                     <Route path='/userterms' element={<Terms />}/>
                 </Routes>
             <Footer />    
           </Router>

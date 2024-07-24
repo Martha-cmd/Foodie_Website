@@ -7,7 +7,7 @@ const Footer = () => {
   
   return (
     <>
-        <main id="footer" className="w-full bg-black h-98 text-white py-20 px-24 flex lg:flex-row flex-col-reverse lg:justify-between gap-14">
+        <main id="footer" className="w-full bg-black h-98 text-white py-20 px-24 flex lg:flex-row flex-col-reverse lg:justify-between gap-14 cursor-pointer">
 
               <div className='flex flex-col items-center gap-1 lg:w-auto w-full'>
                     <img src={ Logo } alt="" className='w-36'/>
@@ -27,8 +27,8 @@ const Footer = () => {
                  <div>
                      <p className='text-[14px]'>LEGAL</p>
                      <ul className='mt-4 flex flex-col gap-5 text-gray-400 text-[15px]'>
-                         <li className='hover:text-gray-200'>Privacy Policy</li>
-                         <li className='hover:text-gray-200'>Terms of use</li>
+                         <Link to="/userprivacy" className='hover:text-gray-200'>Privacy Policy</Link>
+                         <Link to='/userterms' className='hover:text-gray-200'>Terms of use</Link>
                      </ul>
                  </div>
 
