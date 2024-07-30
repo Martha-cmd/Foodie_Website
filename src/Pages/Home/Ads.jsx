@@ -9,7 +9,7 @@ import Modal from './Widgets/Modal';
 const Ads = () => {
   return (
     <>
-          <main className='w-full py-20 text-black flex flex-col items-center lg:px-[100px] md:px-[50px] px-[0] mt-28'>
+          <main className='w-full py-20 text-black flex flex-col items-center lg:px-[100px] md:px-[50px] px-[0] lg:mt-28 mt-12'>
 
                  <div className="flex lg:flex-row flex-col-reverse lg:justify-between justify-center items-center w-full lg:h-[400px] h-fit lg:gap-0 gap-20 rounded-[30px] border-[5px] border-[#034956] lg:pt-5 pt-10 lg:px-16 px-5 bg-red-500" style={{
                         background: `linear-gradient(to bottom, #F15025 0%, rgba(247, 53, 30, 93.23) 100%, rgba(255, 21, 21, 0.85) 100%)`,
