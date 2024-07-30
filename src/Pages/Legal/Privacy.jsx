@@ -5,7 +5,7 @@ const Privacy = () => {
     <>
         <main className="w-full h-full lg:pt-24 md:pt-30 pt-24">
                  <div className='bg-white w-full md:px-24 px-10 lg:py-20 md:pt-20 pt-20 pb-24'>
-                        <h1 className='font-semibold md:text-5xl text-[1.8rem]'>User Privacy</h1>
+                        <h1 className='font-semibold md:text-5xl text-[1.8rem]'>Customer Privacy Policy</h1>
                   <div className="mt-8 flex flex-col gap-10">
                     <section>
                         <h2 className='font-semibold text-2xl'>Introduction</h2>

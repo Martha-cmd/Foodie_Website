@@ -5,6 +5,7 @@ import { FaApple } from "react-icons/fa";
 import { FaGooglePlay } from "react-icons/fa6";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Modal from './Widgets/Modal';
 
 
 const Hero = () => {
@@ -53,12 +54,12 @@ const Hero = () => {
                               </div>
                           </button> */}
 
-                          <button className='py-1.5 px-4 bg-[#F7351E] flex justify-center text-white rounded-full items-center gap-2 shadow-md shadow-[#F7351E] hover:bg-[#f7341eea]'>
+                          <button className='py-1.5 px-4 bg-[#F7351E] flex justify-center text-white rounded-full items-center gap-2 shadow-md shadow-[#F7351E] hover:bg-[#f7341eea]' onClick={()=>document.getElementById('my_modal_1').showModal()}>
                           <p className='text-lg text-[16px]'>Apple Store</p>
                           <FaApple size={18}/>
                           </button>
 
-                          <button className='py-1.5 px-4 bg-transparent border-2 border-gray-700 flex justify-center text-gray-700 rounded-full items-center gap-2 hover:bg-gray-700 hover:text-white'>
+                          <button className='py-1.5 px-4 bg-transparent border-2 border-gray-700 flex justify-center text-gray-700 rounded-full items-center gap-2 hover:bg-gray-700 hover:text-white' onClick={()=>document.getElementById('my_modal_1').showModal()}>
                           <p className='text-lg text-[16px] '>Google Play</p>
                           <FaGooglePlay size={18}/>
                           </button>
@@ -70,6 +71,8 @@ const Hero = () => {
            <div className='lg:w-[50%] w-fit lg:h-[70vh] h-fit flex justify-center' data-aos="fade-up">
                 <img src={ HeroImg } alt="" className='w-full h-full'/>
         </div>
+
+        <Modal />
                 
          </main>
     </>

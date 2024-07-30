@@ -28,7 +28,9 @@ const Footer = () => {
                      <p className='text-[14px]'>LEGAL</p>
                      <ul className='mt-4 flex flex-col gap-5 text-gray-400 text-[15px]'>
                          <Link to="/userprivacy" className='hover:text-gray-200'>Privacy Policy</Link>
-                         <Link to='/userterms' className='hover:text-gray-200'>Terms of use</Link>
+                         <Link to='/userterms' className='hover:text-gray-200'>Terms of use for Customer</Link>
+                         <Link to='/restaurantterms' className='hover:text-gray-200'>Terms of use for Restaurant</Link>
+                         <Link to='/riderterms' className='hover:text-gray-200'>Terms of use for Rider</Link>
                      </ul>
                  </div>
 
@@ -37,7 +39,6 @@ const Footer = () => {
                      <ul className='mt-4 flex flex-col gap-5 text-gray-400 text-[15px]'>
                          <li className='hover:text-gray-200'>Instagram</li>
                          <li className='hover:text-gray-200'>Whatsapp</li>
-                         <li className='hover:text-gray-200'>Phone Call</li>
                          <li className='hover:text-gray-200'>Email</li>
                      </ul>
                  </div>

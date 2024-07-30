@@ -6,6 +6,8 @@ import Footer from '../Components/Footer'
 import About from './About/About'
 import Privacy from './Legal/Privacy'
 import Terms from './Legal/Terms'
+import TOFRider from './Legal/TOFRider'
+import TOFRestaurant from './Legal/TOFRestaurant'
 
 const Index = () => {
   return (
@@ -17,6 +19,8 @@ const Index = () => {
                      <Route path='about' element={<About />}/>
                      <Route path='/userprivacy' element={<Privacy />}/>
                      <Route path='/userterms' element={<Terms />}/>
+                     <Route path='/restaurantterms' element={<TOFRestaurant />}/>
+                     <Route path='/riderterms' element={<TOFRider />}/>
                 </Routes>
             <Footer />    
           </Router>
