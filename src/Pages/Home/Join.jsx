@@ -11,7 +11,7 @@ const Join = () => {
          <main className='w-full h-fit lg:py-20 pt-20 pb-10 text-black flex flex-col items-center'>
               <p className='font-semibold md:text-5xl text-[1.8rem] text-center'>Join the Foodie Family <span className='inline-block' style={{ transform: 'rotate(-15deg)' }}> 🍔</span></p>
 
-              <div className='carousel mt-20'>
+              <div className='carousel lg:mt-20 mt-14'>
           <div className='carousel-track'>
           
             <img src={ MockUp1 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
