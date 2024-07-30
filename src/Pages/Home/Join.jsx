@@ -14,17 +14,17 @@ const Join = () => {
               <div className='carousel lg:mt-20 mt-14'>
           <div className='carousel-track'>
           
-            <img src={ MockUp1 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp2 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp3 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp4 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp5re } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp1 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp2 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp3 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp4 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp5re } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
            
             {/* Duplicate the content to ensure seamless scrolling */}
-            <img src={ MockUp1 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp2 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp3 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
-            <img src={ MockUp4 } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp1 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp2 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp3 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
+            <img src={ MockUp4 } alt="" className='md:w-[50rem] md:h-[40rem] w-[30rem] h-[20rem]'/>
             <img src={ MockUp5re } alt="" className='lg:w-[50rem] lg:h-[40rem] w-[30rem] h-[20rem]'/>
             
           </div>
