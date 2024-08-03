@@ -2,6 +2,8 @@ import React from 'react'
 import Logo from '../assets/logo/FOOdiilogofooter.png'
 import { Link } from 'react-router-dom'
 import { HashLink } from 'react-router-hash-link'
+import { FaInstagram, FaTiktok } from "react-icons/fa";
+import { FiMail } from "react-icons/fi";
 
 const Footer = () => {
   
@@ -20,7 +22,7 @@ const Footer = () => {
                      <p className='text-[14px]'>TABS</p>
                      <ul className='mt-4 flex flex-col gap-5 text-gray-400 text-[15px]'>
                          <Link to='/about' className='hover:text-gray-200'>Company</Link>
-                         <HashLink smooth to="/about#faq" className='hover:text-gray-200'>FAQ</HashLink>
+                         <HashLink smooth to="/about#faq" className='hover:text-gray-200'>FAQs</HashLink>
                      </ul>
                  </div>
 
@@ -37,9 +39,9 @@ const Footer = () => {
                  <div>
                      <p className='text-[14px]'>CONTACT US</p>
                      <ul className='mt-4 flex flex-col gap-5 text-gray-400 text-[15px]'>
-                         <li className='hover:text-gray-200'>Instagram</li>
-                         <li className='hover:text-gray-200'>Whatsapp</li>
-                         <li className='hover:text-gray-200'>Email</li>
+                        <a href="https://www.instagram.com/foodiiapp/"> <li className='hover:text-gray-200 flex gap-3 items-center'><FaInstagram />  Instagram</li> </a>
+                         <a href=""><li className='hover:text-gray-200 flex gap-3 items-center'><FaTiktok /> TikTok</li></a>
+                         <a href="mailto:support@foodiiapp.com"><li className='hover:text-gray-200 flex gap-3 items-center'> <FiMail /> Email</li></a>
                      </ul>
                  </div>
 
